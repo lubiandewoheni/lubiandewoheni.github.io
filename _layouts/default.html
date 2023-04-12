@@ -11,6 +11,17 @@
     <meta name="theme-color" content="#157878">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+    
+<!-- add-darkmod -->
+<style>
+    /* 深色模式下，图层必须要覆盖全局所有，尽量大即可 */
+    .darkmode-layer,
+    .darkmode-toggle {
+        z-index: 10000;
+    }
+</style>
+<script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+    
     {% include head-custom.html %}
   </head>
   <body>
@@ -45,15 +56,6 @@
       </footer>
     </main>
  
-<!-- add-darkmod -->
-<style>
-    /* 深色模式下，图层必须要覆盖全局所有，尽量大即可 */
-    .darkmode-layer,
-    .darkmode-toggle {
-        z-index: 10000;
-    }
-</style>
-<script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
 <script>
     /* 深色模式设置 */
     new Darkmode({
