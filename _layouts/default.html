@@ -11,11 +11,8 @@
     <meta name="theme-color" content="#157878">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
-    {% include head-custom.html %}
-  </head>
-  <body>
 
-<!-- add-darkmod -->
+    <!-- add-darkmod -->
 <style>
     /* 深色模式下，图层必须要覆盖全局所有，尽量大即可 */
     .darkmode-layer,
@@ -39,6 +36,10 @@
         autoMatchOsTheme: false, // default: true
     }).showWidget();
 </script>
+
+    {% include head-custom.html %}
+  </head>
+  <body>
 
     <!--<a id="skip-to-content" href="#content">Skip to the content.</a>-->
 
