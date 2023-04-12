@@ -10,21 +10,3 @@
 <a href="https://www.dmoe.cc/random.php" target="_blank">点我查看随机二次元图片</a>
 
 欢迎各位访问，网站虽小，但有你就够了
-
-
-<!--
-
-[程序设计在线评测平台](https://icpc.ldu.edu.cn/)  
-[百度搜索](https://www.baidu.com)  
-[LDTools](https://ldtstore.com.cn/ldtools/)  
-
-# 1
-## 2
-### 3
-*aaaaa*  
-**aaaaa**  
-~~aaaa~~  
----
- > aa
- 
--->
