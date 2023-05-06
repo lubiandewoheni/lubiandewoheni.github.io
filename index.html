@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 描述 -->
+    <meta name="description" content="ZD的网站" />
+    <!-- 被搜索关键词 -->
+    <meta name="keywords" content="小卿予你, ZD, lubiandewoheni, 小卿"/>
+    <!-- 作者 -->
+    <meta name="author" content="小卿予你">
+    <!-- 标题 -->
+    <meta property="og:title" content="ZD网站目录" />
+    <!-- 图标 -->
+    <link rel="icon" href="favicon.ico" sizes="16x16">
+    <base target="_blank" />
+    <link rel="stylesheet" href="index.css" />
+    <title>ZD的主页</title>
+</head>
+<body>
+    <div class="page-top">
+        <h1>有缘相见，无需多言</h1>
+        <p>
+            欢迎来到ZD的个人网站<br />
+            <a href="old-index.html"> 进入年久失修的页面</a>
+        </p>
+    </div>
+    <div class="catalogue">网&emsp;站&emsp;目&emsp;录</div>
+    <div class="thing">
+        <div class="box1">
+            <div class="thing-title">
+                工具
+            </div>
+            <p class="clearfix">
+                <a href="https://www.baidu.com">百度搜索</a>
+                <a href="https://ldtstore.com.cn/ldtools/">LDTools</a>
+                <a href="https://www.jsjiami.com/">JS不可逆加密</a>
+                <a href="https://icpc.ldu.edu.cn/">程序设计在线评测平台</a>
+            </p>
+        </div>
+        <div class="box2">
+            <div class="thing-title">
+                传送门
+            </div>
+            <p class="clearfix">
+                <a href="https://xkk1.github.io/">wyl：小喾苦的网站</a>
+                <a href="https://changxuanluexin.github.io/">mcq：312牛逼克拉斯</a>
+                <a href="https://zmywml.github.io/">zmy：我的第一个网页</a>
+            </p>
+        </div>
+    </div>
+    <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <div class="footer">
+        <div>
+            <p>
+                <a href="https://lubiandewoheni.github.io/">GitHub个人网站</a>&emsp;
+                <a href="https://lubiandewoheni.gitee.io/">Gitee个人网站</a>&emsp;
+                <a href="https://space.bilibili.com/2007939788">哔哩哔哩</a>&emsp;
+                <a href="https://github.com/lubiandewoheni">GitHub</a>&emsp;
+                <a href="https://gitee.com/lubiandewoheni">Gitee</a>&emsp;
+                <a href="https://blog.csdn.net/zd2199574958">CSDN</a>
+            </p>
+        </div>
+        <p style="text-align:center;">
+            <span id="busuanzi_container_page_pv">本文总阅读量<span id="busuanzi_value_page_pv">?</span>次</span>、
+            <span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv">?</span>次</span>、
+            <span id="busuanzi_container_site_uv">本站总访客数<span id="busuanzi_value_site_uv">?</span>人</span> <br />
+            本站阅历：<span id="sitetime">?年?天?小时?分钟?秒（正在加载...）</span>
+        </p>
+        <p><a href="https://www.google.cn/chrome/">推荐使用 Google Chrome 浏览器以获得最佳体验</a></p>
+    </div>
+    <script>
+        /* Time */
+        function siteTime(){
+            window.setTimeout("siteTime()", 1000);
+            var seconds = 1000;
+            var minutes = seconds * 60;
+            var hours = minutes * 60;
+            var days = hours * 24;
+            var years = days * 365;
+            var today = new Date();
+            var todayYear = today.getFullYear();
+            var todayMonth = today.getMonth()+1;
+            var todayDate = today.getDate();
+            var todayHour = today.getHours();
+            var todayMinute = today.getMinutes();
+            var todaySecond = today.getSeconds();
+            /* Date.UTC() -- 返回date对象距世界标准时间(UTC)1970年1月1日午夜之间的毫秒数(时间戳)
+            year - 作为date对象的年份，为4位年份值
+            month - 0-11之间的整数，做为date对象的月份
+            day - 1-31之间的整数，做为date对象的天数
+            hours - 0(午夜24点)-23之间的整数，做为date对象的小时数
+            minutes - 0-59之间的整数，做为date对象的分钟数
+            seconds - 0-59之间的整数，做为date对象的秒数
+            microseconds - 0-999之间的整数，做为date对象的毫秒数 */
+            var t1 = Date.UTC(2022,11,17,22,43,09); //北京时间2017-09-16 00:00:00创建网站的时间
+            var t2 = Date.UTC(todayYear,todayMonth,todayDate,todayHour,todayMinute,todaySecond);
+            var diff = t2-t1;
+            var diffYears = Math.floor(diff/years);
+            var diffDays = Math.floor((diff/days)-diffYears*365);
+            var diffHours = Math.floor((diff-(diffYears*365+diffDays)*days)/hours);
+            var diffMinutes = Math.floor((diff-(diffYears*365+diffDays)*days-diffHours*hours)/minutes);
+            var diffSeconds = Math.floor((diff-(diffYears*365+diffDays)*days-diffHours*hours-diffMinutes*minutes)/seconds);
+            document.getElementById("sitetime").innerHTML=+diffYears+"年"+diffDays+"天"+diffHours+"小时"+diffMinutes+"分钟"+diffSeconds+"秒";
+        }
+        siteTime();
+        /* 离开页面改变 title */
+        var time;
+        var normar_title = document.title;
+        document.addEventListener('visibilitychange', function () {
+            if (document.visibilityState == 'hidden') {
+                clearTimeout(time);        
+                document.title = '你不喜欢我了吗?';
+            } else {
+                document.title = '回来了记得分享哦!';
+                time=setTimeout(function(){ document.title = normar_title; }, 1500);
+        }
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+    <script src="js/darkmode.js"></script>
+</body>
+</html>
