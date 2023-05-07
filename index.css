@@ -76,6 +76,12 @@ a {
     padding-top: 0.5rem;
     /* letter-spacing: 2rem; */
 }
+.catalogue span a {
+    text-decoration: none;
+    background-color: antiquewhite;
+    border-radius: 1.5rem;
+    
+}
 /* thing */
 .thing {
     margin-left: auto;
