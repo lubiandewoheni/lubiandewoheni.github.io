@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 描述 -->
+    <meta name="description" content="小卿的网站" />
+    <!-- 被搜索关键词 -->
+    <meta name="keywords" content="小卿予你, ZD, lubiandewoheni, 小卿, zhang"/>
+    <!-- 作者 -->
+    <meta name="author" content="小卿予你">
+    <!-- 标题 -->
+    <meta property="og:title" content="小卿网站目录" />
+    <!-- 图标 -->
+
+    <style>
+        .list {  
+        list-style: none;  
+        padding: 0;  
+        margin: 0;  
+        }  
+        
+        .list li {  
+        position: relative;  
+        display: inline-block;  
+        padding: 10px;  
+        }  
+        
+        .list li:before {  
+        content: attr(data-content);  
+        position: absolute;  
+        top: 0;  
+        left: 0;  
+        width: 100%;  
+        text-align: left;  
+        }  
+        
+        .list li.expanded:before {  
+        animation: open 0.5s ease-in-out infinite alternate;  
+        }  
+        
+        .list li.expanded:before,  
+        .list li.expanded:after {  
+        transform: translateX(-100%);  
+        }  
+        
+        .list li.collapsed:before,  
+        .list li.collapsed:after {  
+        transform: translateX(0);  
+        }  
+        
+        @keyframes open {  
+        0% {  
+            transform: translateX(-100%);  
+        }  
+        100% {  
+            transform: translateX(0);  
+        }  
+        }  
+        
+        @keyframes collapse {  
+        0% {  
+            transform: translateX(0);  
+        }  
+        100% {  
+            transform: translateX(-100%);  
+        }  
+        }
+    </style>
+</head>
+<body>
+    <ul class="list">  
+        <li>Item 1</li>  
+        <li>Item 2</li>  
+        <li>Item 3</li>  
+        <li>Item 4</li>  
+        <li>Item 5</li>  
+      </ul>
+</body>

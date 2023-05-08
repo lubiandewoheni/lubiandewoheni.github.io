@@ -172,8 +172,12 @@ details {
 }
 .keep-one .little-title {
     padding-left: 1.5rem;
+    font-size: medium;
 }
 
 .keep-one a {
     text-decoration-line: none;
 }
+
+
+
