@@ -23,6 +23,9 @@ html {
     html {
         font-size: 20px
     }
+    .keep-one {
+        width: 40%;
+    }
 }
 @media screen and (min-width: 42em) and (max-width: 64em) {
     html {
@@ -30,6 +33,9 @@ html {
     }
     .thing {
         padding: 1.5rem;
+    }
+    .keep-one {
+        width: 55%;
     }
 }
 @media screen and (max-width: 42em) {
@@ -39,6 +45,9 @@ html {
     .thing {
         padding: 1rem;
         display: block!important;
+    }
+    .keep-one {
+        width: 70%;
     }
 }
 a {
@@ -157,7 +166,6 @@ left: 0!important;
 } */
 
 .keep-one {
-    width: 40%;
     margin: auto;
     background-image: linear-gradient(to right,#a6c1ee, #fbc2eb);
     border-radius: 0.5rem;
