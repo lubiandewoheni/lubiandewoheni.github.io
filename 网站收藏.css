@@ -157,12 +157,12 @@ left: 0!important;
 } */
 
 .keep-one {
-    width: 50%;
+    width: 40%;
     margin: auto;
     background-image: linear-gradient(to right,#a6c1ee, #fbc2eb);
     border-radius: 0.5rem;
-    padding: 1.1rem;
-    padding-top: 0.5rem;
+    padding: 1.2rem;
+    padding-top: 0.3rem;
 }
 details {
     transition-duration: 0.5s;
