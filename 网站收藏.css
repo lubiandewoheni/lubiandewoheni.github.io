@@ -132,7 +132,7 @@ a {
 } */
 /* footer */
 .footer {
-    margin-top: 5rem;
+    margin-top: 3.5rem;
     font-size: 0.8rem;
     color: #819198;
     text-align: center;
@@ -169,8 +169,15 @@ left: 0!important;
     margin: auto;
     background-image: linear-gradient(to right,#a6c1ee, #fbc2eb);
     border-radius: 0.5rem;
-    padding: 1.2rem;
-    padding-top: 0.3rem;
+    padding: 0.3rem 1.2rem;
+}
+.keep-one .little-title {
+    padding-left: 0.5rem;
+    font-size: medium;
+}
+
+.keep-one a {
+    text-decoration-line: none;
 }
 details {
     transition-duration: 0.5s;
@@ -178,14 +185,5 @@ details {
     -moz-transition-duration: 0.5s;
     -o-transition-duration: 0.5s;
 }
-.keep-one .little-title {
-    padding-left: 1.5rem;
-    font-size: medium;
-}
-
-.keep-one a {
-    text-decoration-line: none;
-}
-
 
 

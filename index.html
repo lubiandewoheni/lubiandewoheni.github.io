@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,7 +8,7 @@
     <!-- 描述 -->
     <meta name="description" content="小卿的网站" />
     <!-- 被搜索关键词 -->
-    <meta name="keywords" content="小卿予你, ZD, lubiandewoheni, 小卿, zhang"/>
+    <meta name="keywords" content="小卿予你, ZD, lubiandewoheni, 小卿, zhang" />
     <!-- 作者 -->
     <meta name="author" content="小卿予你">
     <!-- 标题 -->
@@ -18,6 +19,7 @@
     <link rel="stylesheet" href="index.css" />
     <title>网站目录 | 小卿</title>
 </head>
+
 <body>
     <div class="page-top">
         <h1>有缘相见，无需多言</h1>
@@ -28,17 +30,19 @@
     </div>
     <div>
         <div class="catalogue">
+            <p><a href="网站收藏.html" title="网站收藏 | 小卿" target="_self">&emsp;网&emsp;站&emsp;收&emsp;藏&emsp;</a></p>
+            <p><a href="搜索聚合.html" title="搜索聚合 | 小卿" target="_self">&emsp;搜&emsp;索&emsp;聚&emsp;合&emsp;</a></p>
             <p><a href="综合站点.html" title="网站目录 | 小卿" target="_self">&emsp;综&emsp;合&emsp;站&emsp;点&emsp;</a></p>
             <p><a href="实用工具.html" title="实用工具 | 小卿" target="_self">&emsp;实&emsp;用&emsp;工&emsp;具&emsp;</a></p>
-            <p><a href="网站收藏.html" title="网站收藏 | 小卿" target="_self">&emsp;网&emsp;站&emsp;收&emsp;藏&emsp;</a></p>
             <p><a href="网站传送.html" title="网站传送 | 小卿" target="_self">&emsp;网&emsp;站&emsp;传&emsp;送&emsp;</a></p>
         </div>
     </div>
     <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
     <div class="footer">
         <div>
-            <span style="font-size: large;"><a href="https://www.dmoe.cc/random.php" target="_blank" title="随机动漫图片">点我查看随机二次元图片</a></span>
-        </br>
+            <span style="font-size: large;"><a href="https://www.dmoe.cc/random.php" target="_blank"
+                    title="随机动漫图片">点我查看随机二次元图片</a></span>
+            </br>
             <span style="font-size: large;"><a href="index.html" target="_self" title="网站目录 | 小卿">小卿网站普通版</a></span>
             &emsp;
             <span style="font-size: large;"><a href="青春版.html" target="_self" title="网站目录 | 小卿 | 青春版">小卿网站青春版</a></span>
@@ -66,7 +70,7 @@
     </div>
     <script>
         /* Time */
-        function siteTime(){
+        function siteTime() {
             window.setTimeout("siteTime()", 1000);
             var seconds = 1000;
             var minutes = seconds * 60;
@@ -75,7 +79,7 @@
             var years = days * 365;
             var today = new Date();
             var todayYear = today.getFullYear();
-            var todayMonth = today.getMonth()+1;
+            var todayMonth = today.getMonth() + 1;
             var todayDate = today.getDate();
             var todayHour = today.getHours();
             var todayMinute = today.getMinutes();
@@ -88,15 +92,15 @@
             minutes - 0-59之间的整数，做为date对象的分钟数
             seconds - 0-59之间的整数，做为date对象的秒数
             microseconds - 0-999之间的整数，做为date对象的毫秒数 */
-            var t1 = Date.UTC(2022,11,17,22,43,09); //北京时间2017-09-16 00:00:00创建网站的时间
-            var t2 = Date.UTC(todayYear,todayMonth,todayDate,todayHour,todayMinute,todaySecond);
-            var diff = t2-t1;
-            var diffYears = Math.floor(diff/years);
-            var diffDays = Math.floor((diff/days)-diffYears*365);
-            var diffHours = Math.floor((diff-(diffYears*365+diffDays)*days)/hours);
-            var diffMinutes = Math.floor((diff-(diffYears*365+diffDays)*days-diffHours*hours)/minutes);
-            var diffSeconds = Math.floor((diff-(diffYears*365+diffDays)*days-diffHours*hours-diffMinutes*minutes)/seconds);
-            document.getElementById("sitetime").innerHTML=+diffYears+"年"+diffDays+"天"+diffHours+"小时"+diffMinutes+"分钟"+diffSeconds+"秒";
+            var t1 = Date.UTC(2022, 11, 17, 22, 43, 09); //北京时间2017-09-16 00:00:00创建网站的时间
+            var t2 = Date.UTC(todayYear, todayMonth, todayDate, todayHour, todayMinute, todaySecond);
+            var diff = t2 - t1;
+            var diffYears = Math.floor(diff / years);
+            var diffDays = Math.floor((diff / days) - diffYears * 365);
+            var diffHours = Math.floor((diff - (diffYears * 365 + diffDays) * days) / hours);
+            var diffMinutes = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours) / minutes);
+            var diffSeconds = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours - diffMinutes * minutes) / seconds);
+            document.getElementById("sitetime").innerHTML = +diffYears + "年" + diffDays + "天" + diffHours + "小时" + diffMinutes + "分钟" + diffSeconds + "秒";
         }
         siteTime();
         /* 离开页面改变 title */
@@ -104,15 +108,16 @@
         var normar_title = document.title;
         document.addEventListener('visibilitychange', function () {
             if (document.visibilityState == 'hidden') {
-                clearTimeout(time);        
+                clearTimeout(time);
                 document.title = '你不爱小卿了吗? | 小卿';
             } else {
                 document.title = '记得分享小卿哦! | 小卿';
-                time=setTimeout(function(){ document.title = normar_title; }, 1500);
-        }
+                time = setTimeout(function () { document.title = normar_title; }, 1500);
+            }
         });
     </script>
     <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
     <script src="js/darkmode.js"></script>
 </body>
+
 </html>
