@@ -154,11 +154,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .nav-menu .drop-down ul a {
-  padding: 10px 20px;
+  padding: 5px 20px;
   font-size: 14px;
   font-weight: 500;
   text-transform: none;
-  color: #434175;
+  color: #000000;
 }
 
 .nav-menu .drop-down ul a:hover, .nav-menu .drop-down ul .active > a, .nav-menu .drop-down ul li:hover > a {
@@ -597,7 +597,7 @@ section {
 # Counts
 --------------------------------------------------------------*/
 .counts {
-  padding: 70px 0 60px;
+  padding: 70px 0 10px;
 }
 
 .counts .count-box {
@@ -1471,7 +1471,7 @@ section {
 }
 
 #footer .footer-top {
-  padding: 60px 0 30px 0;
+  padding: 30px 0 10px 0;
   background: #fff;
 }
 
