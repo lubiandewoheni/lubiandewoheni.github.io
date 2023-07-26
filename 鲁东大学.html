@@ -35,11 +35,34 @@
 	<header id="header" class="fixed-top ">
 		<div class="container d-flex align-items-center justify-content-between">
 			<h1 class="logo"><a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
-				<span style="color: aliceblue;">欢迎访问</span></a></h1>
+				<span style="color: aliceblue;">导航栏</span></a></h1>
+			<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+				<!-- 左侧导航栏 -->
+				<div class="offcanvas-header">
+					<h5 class="offcanvas-title" id="offcanvasExampleLabel">导航</h5>
+					<button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+				</div>
+				<div style="margin-left: 50px;">
+					<a href="index.html">首页</a><br>
+					<a href="#about">简介</a><br>
+					<a href="#contac">联系</a><br>
+				</div>
+				<div class="offcanvas-body">
+					<div>小卿团队欢迎你的加入</div>
+					<div class="dropdown mt-3">
+						<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown">联系</button>
+						<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+							<li><a class="dropdown-item" href="#">小卿</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
 			<!-- 顶部中间 -->
 			<nav class="nav-menu d-none d-lg-block">
 				<ul>
 					<li class="active"><a href="index.html">首页</a></li>
+					<li><a href="#about">简介</a></li>
+					<li><a href="#team">展示</a></li>
 					<li class="drop-down"><a href="#">收藏夹</a>
 						<ul>
 							<li class="drop-down"><a href="#">工具</a>
@@ -233,6 +256,7 @@
 											<a href="https://pan.baidu.com/" title="百度网盘" >百度网盘</a>
 											<a href="https://www.myquark.cn/" title="夸克app官方网站-app下载,夸克网盘,浏览器,夸克翻译,夸克小说">夸克官网</a>
 											<a href="https://pc.woozooo.com/">蓝奏·云存储</a>
+											<a href="https://www.123pan.com">123云盘</a>
 										</ul>
 									</li>
 									<li class="drop-down"><a href="#">学习</a>
@@ -330,6 +354,7 @@
 					</li>
 					<li class="drop-down"><a href="#">站长链接</a>
 						<ul>
+							<li><a href="#about">小卿</a></li>
 							<li><a href="https://space.bilibili.com/2007939788" title="小卿予你的个人空间_哔哩哔哩_bilibili">哔哩哔哩</a></li>
 							<li><a href="https://github.com/lubiandewoheni/lubiandewoheni.github.io" title="lubiandewoheni(ZD)">GitHub仓库</a></li>
 							<li><a href="https://gitee.com/lubiandewoheni/lubiandewoheni" title="小卿予你 (lubiandewoheni) - Gitee.com">Gitee仓库</a></li>
@@ -358,9 +383,19 @@
 							</li>
 						</ul>
 					</li>
+					<li class="drop-down"><a href="#">友链传送</a>
+						<ul>
+							<a href="https://xkk1.github.io/" title="一个来自鲁东大学软件工程，对编程有一定建树的小up">wyl：小喾苦的网站</a>
+							<a href="https://changxuanluexin.github.io/" title="这是鲁东大学软件工程的一名王者大佬，对打野有着独特见解的人">mcq：312牛逼克拉斯</a>
+							<a href="https://zmywml.github.io/" title="这是来自鲁东大学软件工程的一为平平淡淡的男人，每天将问题斩于马下">zmy：我的第一个网页</a>
+							<a href="https://lyxiangyu.github.io/My_index/" title="">sxy：lyxiangyu.github.io/My_index/</a>
+							<a href="#" title="还未建成的网站">ft</a>
+							<a href="#" title="还未建成的网站">zyf</a>
+						</ul>
+					</li>
 				</ul>
 			</nav>
-			<a href="https://pd.qq.com/s/62qtzxbhc" class="get-started-btn scrollto" title="暂未实现">单机加入鲁东大学频道</a>
+			<a href="#" class="get-started-btn scrollto" title="暂未实现">欢迎访问</a>
 		</div>
 	</header>
 	<main id="main">
